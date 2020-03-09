@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Contact = () => {
+const Contact = (props) => {
     return (
         <div className="container">
             <h4 className="center">Contact</h4>
@@ -13,3 +13,6 @@ const Contact = () => {
 }
 
 export default Contact;
+
+//when router is used to direct to a component it automatically gets special additions to props (History, Location, Match objects)
+// Each object has its own methods. push method is used above to redirect to about page after 2s.

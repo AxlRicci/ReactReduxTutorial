@@ -1,4 +1,5 @@
 import React from 'react';
+import Rainbow from '../hoc/Rainbow'; // import higher order component.
 
 const About = () => {
     return (
@@ -12,4 +13,4 @@ const About = () => {
     )
 }
 
-export default About;
+export default Rainbow(About); // using higher order component by wrapping About in Rainbow().
